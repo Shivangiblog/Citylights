@@ -4,7 +4,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ProductCard from "@/components/ProductCard";
 import Testimonials from "@/components/Testimonials";
-import { Sparkles, Shield, Truck } from "lucide-react";
+import { Sparkles, Shield, Truck, LightbulbIcon } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
 
 const Index = () => {
@@ -64,13 +64,13 @@ const Index = () => {
 
             <div className="text-center">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Truck className="w-8 h-8 text-primary" />
+                <LightbulbIcon className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-semibold mb-2 text-foreground">
-                Free Delivery
+                All types of lightingCategories
               </h3>
               <p className="text-muted-foreground">
-                On orders over $500 nationwide
+                Best Quality
               </p>
             </div>
           </div>

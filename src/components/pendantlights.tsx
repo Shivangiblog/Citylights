@@ -7,7 +7,7 @@ const PendantLightsPage = () => {
 
   const products = [
     {
-      image: "/slider/pendant-1.jpeg",
+      image: "/slider/Pendent-1.JPG",
       title: "Geometric Pendant",
       description: "Modern industrial design with exposed bulb styling.",
       width: "W: 220mm",
@@ -15,7 +15,7 @@ const PendantLightsPage = () => {
       material: "Metal + Glass",
     },
     {
-      image: "/slider/pendent-2.jpeg",
+      image: "/slider/pendent-22.JPG",
       title: "Glass Globe Pendant",
       description: "Minimalist clear glass with polished brass finish.",
       width: "W: 300mm",
@@ -23,7 +23,7 @@ const PendantLightsPage = () => {
       material: "Glass + Brass",
     },
     {
-      image: "/slider/pendent-3.jpeg",
+      image: "/slider/pendent-33.JPG",
       title: "Drum Shade Pendant",
       description: "Fabric shade with diffused ambient lighting.",
       width: "W: 350mm",
@@ -31,7 +31,7 @@ const PendantLightsPage = () => {
       material: "Fabric + Metal",
     },
     {
-      image: "/slider/c-8.jpg",
+      image: "/slider/pendent-44.JPG",
       title: "Nordic Cone Pendant",
       description: "Scandinavian matte finish minimalist cone design.",
       width: "W: 180mm",
@@ -39,7 +39,7 @@ const PendantLightsPage = () => {
       material: "Aluminium",
     },
     {
-      image: "/slider/pendent-6.jpeg",
+      image: "/slider/pendent-55.JPG",
       title: "Wooden Frame Pendant",
       description: "Warm wooden frame with soft warm-white bulb.",
       width: "W: 250mm",
@@ -47,7 +47,7 @@ const PendantLightsPage = () => {
       material: "Wood + Metal",
     },
     {
-      image: "/slider/c-2.jpg",
+      image: "/slider/pendent-66.JPG",
       title: "Crystal Drop Pendant",
       description: "Elegant crystal drops creating a luxury ambiance.",
       width: "W: 200mm",
@@ -87,18 +87,18 @@ const PendantLightsPage = () => {
                        hover:shadow-2xl transition-all duration-300 cursor-pointer"
           >
             {/* IMAGE */}
-            <div className="relative overflow-hidden">
+            <div className="relative overflow-hidden bg-white flex items-center justify-center h-64">
               <img
                 src={item.image}
                 alt={item.title}
-                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105"
               />
 
               {/* HOVER DETAILS */}
               <div
                 className="absolute inset-0 bg-[#5A4632]/60 opacity-0 
-                              group-hover:opacity-100 transition-all duration-300 
-                              flex items-center justify-center"
+                            group-hover:opacity-100 transition-all duration-300 
+                            flex items-center justify-center"
               >
                 <div className="text-[#FFE9C7] text-center space-y-1">
                   <p className="text-sm">{item.width}</p>

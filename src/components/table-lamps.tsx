@@ -1,10 +1,13 @@
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 const TableLampsPage = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
   const products = [
     {
-      image: "/table-lamps/tl1.jpg",
+      image: "/slider/table lamp-1.JPG",
       title: "Brass Desk Lamp",
       description: "Classic banker's lamp with adjustable shade",
       width: "W: 200mm",
@@ -12,7 +15,7 @@ const TableLampsPage = () => {
       material: "Brass + Glass",
     },
     {
-      image: "/table-lamps/tl2.jpg",
+      image: "/slider/table lamp-2.JPG",
       title: "Ceramic Table Lamp",
       description: "Handcrafted base with textured ceramic finish",
       width: "W: 230mm",
@@ -20,7 +23,7 @@ const TableLampsPage = () => {
       material: "Ceramic + Fabric",
     },
     {
-      image: "/table-lamps/tl3.jpg",
+      image: "/slider/table lamp-3.JPG",
       title: "Crystal Table Lamp",
       description: "Elegant cut crystal body with silk shade",
       width: "W: 210mm",
@@ -28,7 +31,7 @@ const TableLampsPage = () => {
       material: "Crystal + Silk",
     },
     {
-      image: "/table-lamps/tl4.jpg",
+      image: "/slider/table lamp-4.JPG",
       title: "Modern LED Table Lamp",
       description: "Minimalist LED arc design with soft glow",
       width: "W: 180mm",
@@ -36,7 +39,7 @@ const TableLampsPage = () => {
       material: "Acrylic + LED",
     },
     {
-      image: "/table-lamps/tl5.jpg",
+      image: "/slider/table lamp-5.JPG",
       title: "Wooden Base Lamp",
       description: "Natural wooden finish for warm ambiance",
       width: "W: 220mm",
@@ -44,7 +47,7 @@ const TableLampsPage = () => {
       material: "Wood + Fabric",
     },
     {
-      image: "/table-lamps/tl6.jpg",
+      image: "/slider/table lamp-6.JPG",
       title: "Metal Cage Lamp",
       description: "Industrial design with open metal cage",
       width: "W: 200mm",
@@ -78,16 +81,18 @@ const TableLampsPage = () => {
         {products.map((item, index) => (
           <div
             key={index}
+            onClick={() => setSelectedImage(item.image)}
             className="group rounded-xl overflow-hidden shadow-lg
                        border border-[#EAD7C4] bg-[#FFF8EC]/80
                        hover:shadow-2xl transition-all duration-300 cursor-pointer"
           >
             {/* IMAGE */}
-            <div className="relative overflow-hidden">
+            <div className="relative overflow-hidden bg-white h-64 flex items-center justify-center">
               <img
                 src={item.image}
                 alt={item.title}
-                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                className="max-h-full max-w-full object-contain 
+                           transition-transform duration-500 group-hover:scale-105"
               />
 
               {/* HOVER DETAILS */}
@@ -116,6 +121,19 @@ const TableLampsPage = () => {
       </div>
 
       <Footer />
+
+      {/* Full Image Modal */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50"
+          onClick={() => setSelectedImage(null)}
+        >
+          <img
+            src={selectedImage}
+            className="max-w-[90%] max-h-[90%] rounded-xl shadow-2xl animate-fadeIn"
+          />
+        </div>
+      )}
     </div>
   );
 };

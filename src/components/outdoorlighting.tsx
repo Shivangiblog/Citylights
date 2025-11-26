@@ -1,40 +1,43 @@
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 const OutdoorLightingPage = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
   const products = [
     {
-      image: "/slider/hang-88.jpeg",
+      image: "/slider/outdoor light-1.jpeg",
       title: "Landscape Spotlights",
       description: "Weather-resistant with adjustable beam angle",
       size: "H: 350mm • W: 120mm",
     },
     {
-      image: "/slider/out-00.jpg",
+      image: "/slider/outdoor lights-2.jpeg",
       title: "Pathway Lighting",
       description: "Solar-powered stakes for garden illumination",
       size: "H: 500mm • W: 140mm",
     },
     {
-      image: "/slider/out-01.jpg",
+      image: "/slider/outdoor lights-3.jpeg",
       title: "Outdoor Wall Lantern",
       description: "Classic lantern design with LED technology",
       size: "H: 420mm • W: 180mm",
     },
     {
-      image: "/slider/download.jpg",
+      image: "/slider/outdoor lights-4.jpeg",
       title: "Garden Spike Light",
       description: "Perfect for plants & landscape highlights",
       size: "H: 300mm • W: 100mm",
     },
     {
-      image: "/slider/out-06.jpg",
+      image: "/slider/outdoor lights-5.jpeg",
       title: "Gate Wall Light",
       description: "Premium matte finish outdoor fixture",
       size: "H: 280mm • W: 150mm",
     },
     {
-      image: "/slider/outdoor-00.jpg",
+      image: "/slider/outdoor lights-6.jpeg",
       title: "Outdoor Pillar Light",
       description: "Modern LED pillar for pathways & terraces",
       size: "H: 600mm • W: 200mm",
@@ -66,16 +69,17 @@ const OutdoorLightingPage = () => {
         {products.map((item, index) => (
           <div
             key={index}
+            onClick={() => setSelectedImage(item.image)}
             className="group rounded-xl overflow-hidden shadow-lg 
                        border border-[#EAD7C4] bg-[#FFF8EC]/80
                        hover:shadow-2xl transition-all duration-300 cursor-pointer"
           >
-            {/* IMAGE WITH HOVER EFFECT */}
-            <div className="relative overflow-hidden">
+            {/* FIXED IMAGE (NO CROPPING) */}
+            <div className="relative bg-white flex items-center justify-center h-64 overflow-hidden">
               <img
                 src={item.image}
                 alt={item.title}
-                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105"
               />
 
               {/* OVERLAY DETAILS */}
@@ -102,6 +106,19 @@ const OutdoorLightingPage = () => {
       </div>
 
       <Footer />
+
+      {/* Full Image Modal */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50"
+          onClick={() => setSelectedImage(null)}
+        >
+          <img
+            src={selectedImage}
+            className="max-w-[90%] max-h-[90%] rounded-xl shadow-2xl animate-fadeIn"
+          />
+        </div>
+      )}
     </div>
   );
 };

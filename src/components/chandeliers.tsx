@@ -7,7 +7,7 @@ const ChandeliersPage = () => {
 
   const products = [
     {
-      image: "/slider/c-1.jpg",
+      image: "/slider/chandliers.JPG",
       title: "Crystal Luxury Chandelier",
       description: "Elegant full crystal design with warm glow.",
       width: "W: 560mm",
@@ -15,7 +15,7 @@ const ChandeliersPage = () => {
       material: "Crystal + Metal",
     },
     {
-      image: "/slider/c-2.jpg",
+      image: "/slider/chandliers-2.JPG",
       title: "Gold Royal Chandelier",
       description: "Premium gold finish with multi-light crystal hangings.",
       width: "W: 620mm",
@@ -23,7 +23,7 @@ const ChandeliersPage = () => {
       material: "Gold Metal + Crystal",
     },
     {
-      image: "/slider/c-3.jpg",
+      image: "/slider/chandliers-3.JPG",
       title: "Modern Ring Chandelier",
       description: "Contemporary LED rings with adjustable height.",
       width: "W: 450mm",
@@ -31,7 +31,7 @@ const ChandeliersPage = () => {
       material: "Aluminium + Acrylic",
     },
     {
-      image: "/slider/c-4.jpg",
+      image: "/slider/chandliers-4.JPG",
       title: "Empire Crown Chandelier",
       description: "Royal empire design with premium crystal drops.",
       width: "W: 680mm",
@@ -39,7 +39,7 @@ const ChandeliersPage = () => {
       material: "Crystal + Chrome",
     },
     {
-      image: "/slider/c-5.jpg",
+      image: "/slider/chandliers-6.JPG",
       title: "Metal Cage Chandelier",
       description: "Industrial modern chandelier with warm LED.",
       width: "W: 500mm",
@@ -47,7 +47,7 @@ const ChandeliersPage = () => {
       material: "Iron + Glass",
     },
     {
-      image: "/slider/c-6.jpg",
+      image: "/slider/chandliers-7.JPG",
       title: "Classic Antique Chandelier",
       description: "Vintage look with amber crystal accents.",
       width: "W: 550mm",
@@ -83,12 +83,12 @@ const ChandeliersPage = () => {
                        border border-[#EAD7C4] bg-[#FFF8EC]/80
                        hover:shadow-2xl transition-all duration-300 cursor-pointer"
           >
-            {/* Image */}
-            <div className="relative overflow-hidden">
+            {/* FIXED — Visible Image (No Cropping) */}
+            <div className="relative bg-white flex items-center justify-center h-64 overflow-hidden">
               <img
                 src={item.image}
                 alt={item.title}
-                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105"
               />
 
               {/* Hover Info */}

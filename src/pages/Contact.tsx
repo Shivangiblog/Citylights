@@ -195,7 +195,7 @@ ${message}
                       </h3>
                       <p className="text-muted-foreground">+91 86981 98000</p>
                       <p className="text-sm text-muted-foreground mt-1">
-                        Mon-Fri: 10.30am - 8.30pm
+                        Mon-Sun: 10.30am - 8.30pm
                       </p>
                     </div>
                   </div>

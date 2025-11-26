@@ -51,7 +51,7 @@ const WallSconcesPage = () => {
       {/* Page Heading */}
       <section className="py-20 text-center">
         <h1 className="text-4xl font-bold text-gray-800 drop-shadow">
-          Wall lighting
+          Wall Lighting
         </h1>
         <p className="text-lg text-gray-700 mt-4 opacity-80">
           Elegant wall-mounted lighting for modern and classic interiors.
@@ -71,20 +71,23 @@ const WallSconcesPage = () => {
               cursor-pointer
             "
           >
-            {/* Product Image */}
-            <img
-              src={item.image}
-              alt={item.title}
-              className="w-full h-64 object-cover"
-            />
+            {/* Product Image (FIXED – FULLY VISIBLE) */}
+            <div className="h-64 bg-white flex items-center justify-center overflow-hidden">
+              <img
+                src={item.image}
+                alt={item.title}
+                className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
 
+            {/* Text Section */}
             <div className="p-5 text-center">
               <h3 className="text-xl font-semibold text-gray-800">
                 {item.title}
               </h3>
               <p className="text-gray-600 mt-1">{item.description}</p>
 
-              {/* Hover Size Details */}
+              {/* Hover Size Badge */}
               <div
                 className="
                   mt-3 p-3 rounded-lg text-sm font-medium 
@@ -99,7 +102,7 @@ const WallSconcesPage = () => {
         ))}
       </div>
 
-      {/* FULL SCREEN IMAGE MODAL */}
+      {/* Full Image Modal */}
       {selectedImage && (
         <div
           className="fixed inset-0 bg-black/70 flex items-center justify-center z-50"

@@ -47,7 +47,7 @@ const FloorLampsPage = () => {
       material: "Aluminium",
     },
     {
-      image: "/slider/lamp-6.jpg",
+      image: "/slider/lamp-7.jpg",
       title: "Decorative Tube Lamp",
       description: "Beautiful upwards glow with premium finish",
       width: "W: 300mm",
