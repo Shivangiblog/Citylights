@@ -1,3 +1,4 @@
+// Add lazy loading for ProductDetailPage if used in this file
 import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -71,7 +72,7 @@ const WallSconcesPage = () => {
               cursor-pointer
             "
           >
-            {/* Product Image (FIXED – FULLY VISIBLE) */}
+      
             <div className="h-64 bg-white flex items-center justify-center overflow-hidden">
               <img
                 src={item.image}
@@ -80,14 +81,13 @@ const WallSconcesPage = () => {
               />
             </div>
 
-            {/* Text Section */}
             <div className="p-5 text-center">
               <h3 className="text-xl font-semibold text-gray-800">
                 {item.title}
               </h3>
               <p className="text-gray-600 mt-1">{item.description}</p>
 
-              {/* Hover Size Badge */}
+        
               <div
                 className="
                   mt-3 p-3 rounded-lg text-sm font-medium 
@@ -102,7 +102,7 @@ const WallSconcesPage = () => {
         ))}
       </div>
 
-      {/* Full Image Modal */}
+      
       {selectedImage && (
         <div
           className="fixed inset-0 bg-black/70 flex items-center justify-center z-50"

@@ -60,20 +60,21 @@ const ChandeliersPage = () => {
     <div
       className="min-h-screen flex flex-col"
       style={{
-        background: "linear-gradient(135deg, #FFF8EC, #F5E6D3, #FFE9C7, #FAD7A1)",
+        background:
+          "linear-gradient(135deg, #FFF8EC, #F5E6D3, #FFE9C7, #FAD7A1)",
       }}
     >
       <Navigation />
 
-      {/* Header Section */}
       <section className="py-20 text-center">
         <h1 className="text-5xl font-extrabold mb-3 tracking-wide text-[#5A4632]">
           Chandeliers Collection
         </h1>
-        <p className="text-lg text-[#7A6A55]">Premium luxury chandelier designs</p>
+        <p className="text-lg text-[#7A6A55]">
+          Premium luxury chandelier designs
+        </p>
       </section>
 
-      {/* Product Grid */}
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 px-6 pb-20">
         {products.map((item, index) => (
           <div
@@ -83,7 +84,6 @@ const ChandeliersPage = () => {
                        border border-[#EAD7C4] bg-[#FFF8EC]/80
                        hover:shadow-2xl transition-all duration-300 cursor-pointer"
           >
-            {/* FIXED — Visible Image (No Cropping) */}
             <div className="relative bg-white flex items-center justify-center h-64 overflow-hidden">
               <img
                 src={item.image}
@@ -91,7 +91,6 @@ const ChandeliersPage = () => {
                 className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105"
               />
 
-              {/* Hover Info */}
               <div className="absolute inset-0 bg-[#5A4632]/60 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
                 <div className="text-[#FFE9C7] text-center space-y-1">
                   <p className="text-sm">{item.width}</p>
@@ -101,16 +100,16 @@ const ChandeliersPage = () => {
               </div>
             </div>
 
-            {/* Details */}
             <div className="p-5">
-              <h2 className="text-xl font-semibold text-[#5A4632]">{item.title}</h2>
+              <h2 className="text-xl font-semibold text-[#5A4632]">
+                {item.title}
+              </h2>
               <p className="text-sm text-[#7A6A55] mt-1">{item.description}</p>
             </div>
           </div>
         ))}
       </div>
 
-      {/* Fullscreen Image Popup */}
       {selectedImage && (
         <div
           onClick={() => setSelectedImage(null)}
@@ -122,7 +121,6 @@ const ChandeliersPage = () => {
             className="max-h-[90vh] max-w-[90vw] rounded-lg shadow-2xl"
           />
 
-          {/* Close Button */}
           <button
             onClick={() => setSelectedImage(null)}
             className="absolute top-6 right-6 text-white text-3xl font-bold"

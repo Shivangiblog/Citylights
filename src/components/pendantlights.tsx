@@ -66,7 +66,6 @@ const PendantLightsPage = () => {
     >
       <Navigation />
 
-      {/* Header */}
       <section className="py-20 text-center">
         <h1 className="text-5xl font-extrabold mb-3 text-[#5A4632]">
           Pendant Lights
@@ -76,7 +75,6 @@ const PendantLightsPage = () => {
         </p>
       </section>
 
-      {/* Product Grid */}
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 px-6 pb-20">
         {products.map((item, index) => (
           <div
@@ -86,7 +84,6 @@ const PendantLightsPage = () => {
                        border border-[#EAD7C4] bg-[#FFF8EC]/80
                        hover:shadow-2xl transition-all duration-300 cursor-pointer"
           >
-            {/* IMAGE */}
             <div className="relative overflow-hidden bg-white flex items-center justify-center h-64">
               <img
                 src={item.image}
@@ -94,7 +91,6 @@ const PendantLightsPage = () => {
                 className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105"
               />
 
-              {/* HOVER DETAILS */}
               <div
                 className="absolute inset-0 bg-[#5A4632]/60 opacity-0 
                             group-hover:opacity-100 transition-all duration-300 
@@ -108,7 +104,6 @@ const PendantLightsPage = () => {
               </div>
             </div>
 
-            {/* TEXT SECTION */}
             <div className="p-5">
               <h2 className="text-xl font-semibold text-[#5A4632]">
                 {item.title}
@@ -119,7 +114,6 @@ const PendantLightsPage = () => {
         ))}
       </div>
 
-      {/* IMAGE MODAL */}
       {selectedImage && (
         <div
           className="fixed inset-0 bg-black/70 flex items-center justify-center z-50"

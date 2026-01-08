@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
@@ -6,8 +7,15 @@ import ProductCard from "@/components/ProductCard";
 import Testimonials from "@/components/Testimonials";
 import { Sparkles, Shield, Truck, LightbulbIcon } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
+import { useSEO } from "@/utils/seo";
 
 const Index = () => {
+  useSEO({
+    title: "City Light Store - Premium Lighting Solutions",
+    description: "Discover premium lighting fixtures for every space. Chandeliers, pendant lights, floor lamps, and more. Quality craftsmanship with 10-year warranty.",
+    keywords: "lighting store, chandeliers, pendant lights, floor lamps, table lamps, outdoor lighting, premium lighting fixtures",
+    image: "/slider/c-logo.png"
+  });
   const featuredProducts = [
     {
       image: "/slider/h-pendent.jpeg",

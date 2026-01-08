@@ -1,3 +1,4 @@
+// Add lazy loading for ProductDetailPage if used in this file
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -17,10 +18,13 @@ const sliderImages = [
 export default function HeroSection() {
   return (
     <section className="relative h-screen flex flex-col md:flex-row items-center overflow-hidden bg-gradient-to-br from-amber-100 via-orange-200 to-yellow-100">
-
       {/* TOP WAVE – START */}
       <div className="absolute top-0 left-0 w-full overflow-hidden leading-[0] rotate-180">
-        <svg viewBox="0 0 1440 320" className="w-full h-28" preserveAspectRatio="none">
+        <svg
+          viewBox="0 0 1440 320"
+          className="w-full h-28"
+          preserveAspectRatio="none"
+        >
           <path
             fill="#ffddad"
             d="M0,192L120,181.3C240,171,480,149,720,160C960,171,1200,213,1320,234.7L1440,256V0H0Z"
@@ -36,11 +40,14 @@ export default function HeroSection() {
       <div className="w-full md:w-1/2 z-10 px-6 md:px-16 py-10 flex items-center">
         <div className="backdrop-blur-md bg-white/40 rounded-3xl p-8 md:p-10 shadow-xl border border-white/20">
           <h1 className="text-3xl md:text-6xl font-extrabold mb-6 text-gray-900 drop-shadow-sm leading-tight text-center md:text-left">
-            Brighten Your Space<br />With Stunning Lighting
+            Brighten Your Space
+            <br />
+            With Stunning Lighting
           </h1>
 
           <p className="text-base md:text-xl mb-8 text-gray-700 leading-relaxed text-center md:text-left">
-            Explore premium LED, decorative, and modern lighting solutions designed to transform every room.
+            Explore premium LED, decorative, and modern lighting solutions
+            designed to transform every room.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
@@ -51,7 +58,11 @@ export default function HeroSection() {
             </Link>
 
             <Link to="/contact">
-              <Button size="lg" variant="secondary" className="shadow-md hover:shadow-lg">
+              <Button
+                size="lg"
+                variant="secondary"
+                className="shadow-md hover:shadow-lg"
+              >
                 Book Consultation
               </Button>
             </Link>
@@ -85,7 +96,11 @@ export default function HeroSection() {
 
       {/* ZIG-ZAG WAVE CURVE – END shape */}
       <div className="absolute bottom-20 left-0 w-full overflow-hidden leading-[0]">
-        <svg viewBox="0 0 1440 320" className="w-full h-28" preserveAspectRatio="none">
+        <svg
+          viewBox="0 0 1440 320"
+          className="w-full h-28"
+          preserveAspectRatio="none"
+        >
           <path
             fill="#f4c58a"
             d="
@@ -103,7 +118,11 @@ export default function HeroSection() {
 
       {/* BOTTOM WAVE – REVERSE (START AGAIN) */}
       <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0] rotate-180">
-        <svg viewBox="0 0 1440 320" className="w-full h-40" preserveAspectRatio="none">
+        <svg
+          viewBox="0 0 1440 320"
+          className="w-full h-40"
+          preserveAspectRatio="none"
+        >
           <path
             fill="#f4c58a"
             d="

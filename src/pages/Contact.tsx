@@ -1,3 +1,4 @@
+
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -7,8 +8,15 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { useSEO } from "@/utils/seo";
 
 const Contact = () => {
+  useSEO({
+    title: "Contact City Light Store - Pune",
+    description: "Contact City Light Store for premium lighting solutions, support, and inquiries. Located in Pune.",
+    keywords: "contact city light, lighting store pune, support, inquiry, phone, email",
+    image: "/slider/c-logo.png"
+  });
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",

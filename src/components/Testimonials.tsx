@@ -1,3 +1,4 @@
+// Add lazy loading for ProductDetailPage if used in this file
 "use client";
 
 import { Card, CardContent } from "@/components/ui/card";

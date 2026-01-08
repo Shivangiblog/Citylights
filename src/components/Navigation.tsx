@@ -1,5 +1,4 @@
 import { Link, useLocation } from "react-router-dom";
-import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 
@@ -8,13 +7,27 @@ const Navigation = () => {
 
   const [isOpen, setIsOpen] = useState(false);
 
-  // FIX: separate dropdowns
-  const [desktopDropdown, setDesktopDropdown] = useState(false);
-  const [mobileDropdown, setMobileDropdown] = useState(false);
+  const [desktopLighting, setDesktopLighting] = useState(false);
+  const [desktopSensor, setDesktopSensor] = useState(false);
+  const [desktopTrash, setDesktopTrash] = useState(false);
 
-  const dropdownRef = useRef<HTMLDivElement>(null);
+  const [mobileLighting, setMobileLighting] = useState(false);
+  const [mobileSensor, setMobileSensor] = useState(false);
+  const [mobileTrash, setMobileTrash] = useState(false);
+
+  const lightingRef = useRef<HTMLDivElement>(null);
+  const sensorRef = useRef<HTMLDivElement>(null);
+  const trashRef = useRef<HTMLDivElement>(null);
 
   const isActive = (path: string) => location.pathname === path;
+
+  const baseLink =
+    "text-sm font-medium text-muted-foreground hover:text-primary transition";
+
+  const activeLink = "text-sm font-medium text-primary";
+
+  const dropdownItem =
+    "block px-4 py-2.5 text-sm font-medium hover:bg-primary/10 transition";
 
   const lightingCategories = [
     { name: "Chandeliers", path: "/chandeliers" },
@@ -25,21 +38,24 @@ const Navigation = () => {
     { name: "Outdoor Lighting", path: "/outdoorlighting" },
   ];
 
-  const navLinks = [
-    { path: "/", label: "Home" },
-    { path: "/about", label: "About Us" },
-    { path: "/contact", label: "Contact Us" },
+  const sensorCategories = [
+    { name: "Sensor Can", path: "/sensorcan" },
+    { name: "Sensor Pump", path: "/sensor-pump" },
   ];
 
-  // Close desktop dropdown on outside click
+  const trashCategories = [
+    { name: "StepCan", path: "/stepcan" },
+    { name: "Incabient", path: "/incabient" },
+    { name: "SmallCan", path: "/smallcan" },
+  ];
+
   useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (
-        dropdownRef.current &&
-        !dropdownRef.current.contains(event.target as Node)
-      ) {
-        setDesktopDropdown(false);
-      }
+    const handleClickOutside = (e: MouseEvent) => {
+      if (!lightingRef.current?.contains(e.target as Node))
+        setDesktopLighting(false);
+      if (!sensorRef.current?.contains(e.target as Node))
+        setDesktopSensor(false);
+      if (!trashRef.current?.contains(e.target as Node)) setDesktopTrash(false);
     };
 
     document.addEventListener("mousedown", handleClickOutside);
@@ -47,156 +63,239 @@ const Navigation = () => {
   }, []);
 
   return (
-    <nav className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50 shadow-sm">
+    <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b shadow-sm">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
-
-          {/* Logo */}
+        <div className="flex h-16 items-center justify-between">
           <Link to="/" className="flex items-center">
             <img
               src="/slider/c-logo.png"
-              alt="City Lights Pune Logo"
-              className="w-40 h-auto object-contain"
+              alt="City Lights"
+              className="w-36 md:w-40 object-contain"
             />
           </Link>
 
-          {/* Desktop Menu */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-6">
+            <Link to="/" className={isActive("/") ? activeLink : baseLink}>
+              Home
+            </Link>
 
-            {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className={`text-sm font-medium transition-colors hover:text-primary ${
-                  isActive(link.path)
-                    ? "text-primary"
-                    : "text-muted-foreground"
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
+            <Link
+              to="/about"
+              className={isActive("/about") ? activeLink : baseLink}
+            >
+              About
+            </Link>
 
-            {/* Desktop Dropdown */}
-            <div className="relative" ref={dropdownRef}>
+            <Link
+              to="/contact"
+              className={isActive("/contact") ? activeLink : baseLink}
+            >
+              Contact
+            </Link>
+
+            {/* Lighting */}
+            <div className="relative" ref={lightingRef}>
               <button
-                onClick={() => setDesktopDropdown(!desktopDropdown)}
-                className={`text-sm font-medium flex items-center gap-1 hover:text-primary transition-colors ${
-                  isActive("/lighting")
-                    ? "text-primary"
-                    : "text-muted-foreground"
-                }`}
+                onClick={() => setDesktopLighting(!desktopLighting)}
+                className={`${baseLink} flex items-center gap-1`}
               >
                 Lighting
                 <ChevronDown
-                  className={`w-4 h-4 transition-transform ${
-                    desktopDropdown ? "rotate-180" : ""
+                  className={`w-4 transition ${
+                    desktopLighting ? "rotate-180" : ""
                   }`}
                 />
               </button>
 
-              {desktopDropdown && (
-                <div className="absolute top-full left-0 mt-2 w-56 bg-background border rounded-lg shadow-lg z-50 animate-fade-in">
-                  <div className="py-2">
-                    {lightingCategories.map((category) => (
-                      <Link
-                        key={category.name}
-                        to={category.path}
-                        onClick={() => setDesktopDropdown(false)}
-                        className="block px-4 py-2 text-sm hover:bg-primary/10 hover:text-primary"
-                      >
-                        {category.name}
-                      </Link>
-                    ))}
-
-                    <div className="border-t mt-2 pt-2">
-                      <Link
-                        to="/lighting"
-                        onClick={() => setDesktopDropdown(false)}
-                        className="block px-4 py-2 text-sm font-medium text-primary hover:bg-primary/10"
-                      >
-                        View All →
-                      </Link>
-                    </div>
-                  </div>
+              {desktopLighting && (
+                <div className="absolute left-0 mt-2 w-56 bg-white border rounded-lg shadow-lg z-50">
+                  {lightingCategories.map((item) => (
+                    <Link
+                      key={item.name}
+                      to={item.path}
+                      className={dropdownItem}
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
                 </div>
               )}
             </div>
 
-          
-          </div>
-
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden p-2"
-            onClick={() => {
-              setIsOpen(!isOpen);
-              setMobileDropdown(false); // reset dropdown
-            }}
-          >
-            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
-        </div>
-
-        {/* MOBILE MENU */}
-        {isOpen && (
-          <div className="md:hidden py-4 space-y-4 animate-fade-in">
-
-            {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                onClick={() => setIsOpen(false)}
-                className={`block text-sm font-medium hover:text-primary ${
-                  isActive(link.path)
-                    ? "text-primary"
-                    : "text-muted-foreground"
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
-
-            {/* Mobile Lighting Dropdown */}
-            <div>
+            <div className="relative" ref={sensorRef}>
               <button
-                onClick={() => setMobileDropdown(!mobileDropdown)}
-                className="w-full flex items-center justify-between text-sm font-medium"
+                onClick={() => setDesktopSensor(!desktopSensor)}
+                className={`${baseLink} flex items-center gap-1`}
               >
-                Lighting
+                SimpleHuman
                 <ChevronDown
-                  className={`w-4 h-4 transition-transform ${
-                    mobileDropdown ? "rotate-180" : ""
+                  className={`w-4 transition ${
+                    desktopSensor ? "rotate-180" : ""
                   }`}
                 />
               </button>
 
-              {mobileDropdown && (
-                <div className="mt-2 pl-4 space-y-1 animate-fade-in">
-                  {lightingCategories.map((category) => (
+              {desktopSensor && (
+                <div className="absolute left-0 mt-2 w-56 bg-white border rounded-lg shadow-lg z-50">
+                  {sensorCategories.map((item) => (
                     <Link
-                      key={category.name}
-                      to={category.path}
-                      onClick={() => {
-                        setIsOpen(false);
-                        setMobileDropdown(false);
-                      }}
-                      className="block py-2 text-sm text-muted-foreground hover:text-primary"
+                      key={item.name}
+                      to={item.path}
+                      className={dropdownItem}
                     >
-                      {category.name}
+                      {item.name}
                     </Link>
                   ))}
+                </div>
+              )}
+            </div>
 
-                  <Link
-                    to="/lighting"
-                    onClick={() => {
-                      setIsOpen(false);
-                      setMobileDropdown(false);
-                    }}
-                    className="block py-2 font-medium text-primary"
-                  >
-                    View All →
-                  </Link>
+            <div className="relative" ref={trashRef}>
+              <button
+                onClick={() => setDesktopTrash(!desktopTrash)}
+                className={`${baseLink} flex items-center gap-1`}
+              >
+                Trash
+                <ChevronDown
+                  className={`w-4 transition ${
+                    desktopTrash ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+
+              {desktopTrash && (
+                <div className="absolute right-0 mt-2 w-56 bg-white border rounded-lg shadow-lg z-50">
+                  {trashCategories.map((item) => (
+                    <Link
+                      key={item.name}
+                      to={item.path}
+                      className={dropdownItem}
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+
+          <button
+            className="md:hidden p-2 text-muted-foreground"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? <X /> : <Menu />}
+          </button>
+        </div>
+
+        {isOpen && (
+          <div className="md:hidden py-4 space-y-2 border-t text-sm font-medium">
+            <Link
+              to="/"
+              className="block px-4 py-2"
+              onClick={() => setIsOpen(false)}
+            >
+              Home
+            </Link>
+
+            <Link
+              to="/about"
+              className="block px-4 py-2"
+              onClick={() => setIsOpen(false)}
+            >
+              About
+            </Link>
+
+            <Link
+              to="/contact"
+              className="block px-4 py-2"
+              onClick={() => setIsOpen(false)}
+            >
+              Contact
+            </Link>
+
+            <div className="px-4">
+              <button
+                onClick={() => setMobileLighting(!mobileLighting)}
+                className="flex w-full items-center justify-between py-2"
+              >
+                Lighting
+                <ChevronDown
+                  className={`w-4 transition ${
+                    mobileLighting ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+
+              {mobileLighting && (
+                <div className="bg-gray-50 border rounded-lg shadow mt-2">
+                  {lightingCategories.map((item) => (
+                    <Link
+                      key={item.name}
+                      to={item.path}
+                      className="block px-4 py-2.5 text-sm font-medium hover:bg-primary/10"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            <div className="px-4">
+              <button
+                onClick={() => setMobileSensor(!mobileSensor)}
+                className="flex w-full items-center justify-between py-2"
+              >
+                SimpleHuman
+                <ChevronDown
+                  className={`w-4 transition ${
+                    mobileSensor ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+
+              {mobileSensor && (
+                <div className="bg-gray-50 border rounded-lg shadow mt-2">
+                  {sensorCategories.map((item) => (
+                    <Link
+                      key={item.name}
+                      to={item.path}
+                      className="block px-4 py-2.5 text-sm font-medium hover:bg-primary/10"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            <div className="px-4">
+              <button
+                onClick={() => setMobileTrash(!mobileTrash)}
+                className="flex w-full items-center justify-between py-2"
+              >
+                Trash
+                <ChevronDown
+                  className={`w-4 transition ${
+                    mobileTrash ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+
+              {mobileTrash && (
+                <div className="bg-gray-50 border rounded-lg shadow mt-2">
+                  {trashCategories.map((item) => (
+                    <Link
+                      key={item.name}
+                      to={item.path}
+                      className="block px-4 py-2.5 text-sm font-medium hover:bg-primary/10"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
                 </div>
               )}
             </div>

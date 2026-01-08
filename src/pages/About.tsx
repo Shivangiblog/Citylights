@@ -1,9 +1,11 @@
 "use client";
 
+
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Lightbulb, Users, Award, Heart } from "lucide-react";
 import { useEffect } from "react";
+import { useSEO } from "@/utils/seo";
 
 // SCROLL ANIMATION
 const animateOnScroll = () => {
@@ -23,7 +25,14 @@ const animateOnScroll = () => {
   elements.forEach((el) => observer.observe(el));
 };
 
+
 export default function About() {
+  useSEO({
+    title: "About City Light Store - Pune",
+    description: "Learn about City Light Store, Pune. Bringing warm, beautiful lighting to homes & businesses since 2020.",
+    keywords: "about city light, lighting store pune, company info, lighting business",
+    image: "/slider/c-logo.png"
+  });
   useEffect(() => {
     animateOnScroll();
   }, []);

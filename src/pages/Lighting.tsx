@@ -1,8 +1,16 @@
+
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ProductCard from "@/components/ProductCard";
+import { useSEO } from "@/utils/seo";
 
 const Lighting = () => {
+  useSEO({
+    title: "Lighting Products - City Light Store",
+    description: "Browse our lighting products: chandeliers, pendant lights, floor lamps, and more. Premium quality for every space.",
+    keywords: "lighting products, chandeliers, pendant lights, floor lamps, table lamps, wall lighting, outdoor lighting",
+    image: "/slider/c-logo.png"
+  });
   const categories = [
     {
       title: "Chandeliers",

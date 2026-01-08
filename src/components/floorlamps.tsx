@@ -1,3 +1,4 @@
+// Add lazy loading for ProductDetailPage if used in this file
 import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
