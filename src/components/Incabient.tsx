@@ -1,4 +1,3 @@
-// Add lazy loading for ProductDetailPage if used in this file
 "use client";
 import { useState } from "react";
 import Navigation from "@/components/Navigation";
@@ -41,11 +40,10 @@ const CabinetCanPage = () => {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
-      {/* Section 1: Product Specs */}
+
       <section className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left Side - Product Image Carousel */}
             <div className="relative">
               <div className="text-center mb-8">
                 <div className="inline-flex items-center gap-2 text-gray-600 mb-2">
@@ -69,7 +67,6 @@ const CabinetCanPage = () => {
                 </div>
               </div>
 
-              {/* Image Display */}
               <div className="relative bg-gray-50 rounded-2xl p-8 shadow-lg">
                 <img
                   src={images[currentImage]}
@@ -77,7 +74,6 @@ const CabinetCanPage = () => {
                   className="w-full h-96 object-contain"
                 />
 
-                {/* Navigation Arrows */}
                 <button
                   onClick={handlePrevImage}
                   className="absolute left-4 top-1/2 -translate-y-1/2 bg-white p-3 rounded-full shadow-lg hover:bg-gray-100 transition"
@@ -119,7 +115,6 @@ const CabinetCanPage = () => {
                 </button>
               </div>
 
-              {/* Image Indicators */}
               <div className="flex justify-center gap-2 mt-6">
                 {images.map((_, idx) => (
                   <button
@@ -133,7 +128,6 @@ const CabinetCanPage = () => {
               </div>
             </div>
 
-            {/* Right Side - Product Details */}
             <div>
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">
                 {selectedSize === "10L"
@@ -146,7 +140,6 @@ const CabinetCanPage = () => {
                   : "30 Liter / 8 Gallon"}
               </p>
 
-              {/* Size Selection */}
               <div className="mb-8">
                 <h2 className="text-xl font-bold text-gray-900 mb-4">SIZE</h2>
                 <div className="space-y-3">
@@ -173,7 +166,6 @@ const CabinetCanPage = () => {
                 </div>
               </div>
 
-              {/* Key Features */}
               <div className="bg-gray-50 rounded-xl p-6 mb-8">
                 <h3 className="font-bold text-gray-900 mb-4">Key Features:</h3>
                 <ul className="space-y-3 text-sm text-gray-700">
@@ -241,7 +233,6 @@ const CabinetCanPage = () => {
                 </ul>
               </div>
 
-              {/* Price Summary */}
               <div className="border-t pt-6">
                 <div className="flex items-baseline gap-2 mb-6">
                   <h3 className="text-2xl font-bold text-gray-900">SUMMARY</h3>
@@ -255,11 +246,9 @@ const CabinetCanPage = () => {
         </div>
       </section>
 
-      {/* Section 2: Features */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            {/* Feature 1 */}
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
               <div className="relative h-72">
                 <img
@@ -281,7 +270,6 @@ const CabinetCanPage = () => {
               </div>
             </div>
 
-            {/* Feature 2 */}
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
               <div className="relative h-72">
                 <img
@@ -289,7 +277,7 @@ const CabinetCanPage = () => {
                   alt="Perfect Fit, Extra Strong"
                   className="w-full h-full object-cover"
                 />
-                {/* R Badge */}
+
                 <div className="absolute top-6 right-6 bg-yellow-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl font-bold shadow-lg">
                   R
                 </div>
@@ -309,7 +297,6 @@ const CabinetCanPage = () => {
             </div>
           </div>
 
-          {/* Additional Info Section */}
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-xl shadow-md">
               <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">

@@ -10,7 +10,7 @@ export default function RootLayout({
       <body>
         {children}
 
-        {/* WhatsApp Floating Button */}
+
         <a
           href="https://wa.me/919876543210?text=Hello%20I%20want%20more%20details"
           target="_blank"
