@@ -1,0 +1,126 @@
+{
+	"name": "better-seo",
+	"displayName": "better-seo",
+	"description": "Avoid common SEO traps while you write your Blogpost",
+	"license": "MIT",
+	"author": {
+		"email": "jan@work-with-jan.com",
+		"name": "Jan Schulte",
+		"url": "https://beyondfeaturetalk.com"
+	},
+	"publisher": "janschulte",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/schultyy/better-seo"
+	},
+	"version": "2.0.1",
+	"icon": "resources/better_seo.png",
+	"engines": {
+		"vscode": "^1.56.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:better-seo.refresh",
+		"onView:seo-explorer"
+	],
+	"main": "./dist/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "better-seo.refresh",
+				"title": "refresh",
+				"icon": {
+					"light": "resources/light/refresh.svg",
+					"dark": "resources/dark/refresh.svg"
+				}
+			}
+		],
+		"configuration": {
+			"title": "BetterSEO",
+			"properties": {
+				"betterseo.frontmatter.titleAttribute": {
+					"type": "string",
+					"default": "title",
+					"pattern": "[\\w_\\d\\w]+",
+					"description": "Specifies the title attribute to look for in the blog post frontmatter"
+				},
+				"betterseo.frontmatter.seoTitleAttribute": {
+					"type": "string",
+					"default": "seo_title",
+					"pattern": "[\\w_\\d\\w]+",
+					"description": "Specifies the SEO title attribute to look for in the blog post frontmatter"
+				},
+				"betterseo.frontmatter.seoDescriptionAttribute": {
+					"type": "string",
+					"default": "seo_description",
+					"pattern": "[\\w_\\d\\w]+",
+					"description": "Specifies the SEO description attribute to look for in the blog post frontmatter"
+				}
+			}
+		},
+		"menus": {
+			"view/title": [
+				{
+					"command": "better-seo.refresh",
+					"when": "view == seo-results",
+					"group": "navigation"
+				}
+			]
+		},
+		"viewsContainers": {
+			"activitybar": [
+				{
+					"id": "seo-explorer",
+					"title": "SEO Explorer",
+					"icon": "resources/better-seo-icon.svg"
+				}
+			]
+		},
+		"views": {
+			"seo-explorer": [
+				{
+					"id": "seo-results",
+					"name": "SEO Results"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "webpack --mode production",
+		"webpack": "webpack --mode development",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "yarn run compile && yarn run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js",
+		"webpack-dev": "webpack --mode development --watch",
+		"test-compile": "tsc -p ./"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.2.2",
+		"@types/node": "^15.12.1",
+		"@types/vscode": "^1.56.0",
+		"@typescript-eslint/eslint-plugin": "^4.26.0",
+		"@typescript-eslint/parser": "^4.26.0",
+		"eslint": "^7.28.0",
+		"mocha": "^8.4.0",
+		"glob": "^7.1.7",
+		"ts-loader": "^9.2.2",
+		"typescript": "^4.2.4",
+		"vscode-test": "^1.5.2",
+		"webpack": "^5.38.1",
+		"webpack-cli": "^4.7.0"
+	},
+	"dependencies": {
+		"@textlint/markdown-to-ast": "^12.0.0",
+		"gray-matter": "^4.0.3"
+	},
+	"__metadata": {
+		"installedTimestamp": 1768914189682,
+		"targetPlatform": "undefined",
+		"size": 511057
+	}
+}
