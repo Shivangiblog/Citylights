@@ -1123,3 +1123,196 @@ ERROR 2026-01-27T09:31:17.965 TID(9556) AdAppMgrUtil::InitialSSLContext Internet
  INFO 2026-02-05T10:00:24.515 TID(8184) AppMgr::started: exit.
  INFO 2026-02-05T10:00:27.974 TID(4656) CmdTargetMgrImp::isHigherVersion SDS  version:4.0.69.0
  INFO 2026-02-05T10:00:27.975 TID(4656) CmdTargetMgrImp::isHigherVersion SELF version:4.0.69.0
+ INFO 2026-02-05T18:30:47.095 TID(4656) Autodesk Application Manager ({CB028500-D7D4-4A9B-8337-4440EBEC6E2F}) stopped.
+ INFO 2026-02-06T10:00:07.460 TID(24128) Autodesk Application Manager ({8668ECD9-8347-43FA-AE09-FAFCA0AC8327}) is starting... (C:/Program Files (x86)/Common Files/Autodesk Shared/AppManager/R1/AdAppMgr.exe)
+ INFO 2026-02-06T10:00:07.460 TID(24128) Command line: C:\Program Files (x86)\Common Files\Autodesk Shared\AppManager\R1\AdAppMgr.exe -showminimized -checkautorun
+ INFO 2026-02-06T10:00:13.193 TID(24128) Launch another instance from per user location successfully.
+ INFO 2026-02-06T10:00:13.193 TID(24128) Autodesk Application Manager ({8668ECD9-8347-43FA-AE09-FAFCA0AC8327}) quits now.
+ INFO 2026-02-06T10:00:14.067 TID(20064) Autodesk Application Manager ({5E84F550-7F77-435A-89F3-EADC7BFDC26C}) is starting... (C:/Users/UID/AppData/Local/Autodesk/.AdskAppManager/R1/AdAppMgr.exe)
+ INFO 2026-02-06T10:00:14.067 TID(20064) Command line: C:\Users\UID\AppData\Local\Autodesk\.AdskAppManager\R1\AdAppMgr.exe -showminimized -checkautorun
+ INFO 2026-02-06T10:00:14.083 TID(20064) Autodesk Application Manager ({5E84F550-7F77-435A-89F3-EADC7BFDC26C}) started.
+ INFO 2026-02-06T10:00:14.099 TID(20064) AdAppMgrUtil::InitialSSLContext
+ INFO 2026-02-06T10:00:16.398 TID(20064) AdNetworkMgr::init called...
+ INFO 2026-02-06T10:00:16.398 TID(22188) AppMgr::started...
+ INFO 2026-02-06T10:00:16.429 TID(22188) AppCastMgr::create succeeded.
+ INFO 2026-02-06T10:00:16.429 TID(22188) ClientStateMgr::create succeeded.
+ INFO 2026-02-06T10:00:16.445 TID(22188) AppMgr::started: exit.
+ INFO 2026-02-06T10:00:19.163 TID(20064) CmdTargetMgrImp::isHigherVersion SDS  version:4.0.69.0
+ INFO 2026-02-06T10:00:19.163 TID(20064) CmdTargetMgrImp::isHigherVersion SELF version:4.0.69.0
+ INFO 2026-02-06T18:27:45.577 TID(20064) Autodesk Application Manager ({5E84F550-7F77-435A-89F3-EADC7BFDC26C}) stopped.
+ INFO 2026-02-07T10:27:50.216 TID(13240) Autodesk Application Manager ({AE3F7727-B071-4094-A198-5FF056A2997C}) is starting... (C:/Program Files (x86)/Common Files/Autodesk Shared/AppManager/R1/AdAppMgr.exe)
+ INFO 2026-02-07T10:27:50.216 TID(13240) Command line: C:\Program Files (x86)\Common Files\Autodesk Shared\AppManager\R1\AdAppMgr.exe -showminimized -checkautorun
+ INFO 2026-02-07T10:27:55.889 TID(13240) Launch another instance from per user location successfully.
+ INFO 2026-02-07T10:27:55.889 TID(13240) Autodesk Application Manager ({AE3F7727-B071-4094-A198-5FF056A2997C}) quits now.
+ INFO 2026-02-07T10:27:56.626 TID(11996) Autodesk Application Manager ({F6CD2F5B-26E9-4EE3-A270-F3ABBC30B2D3}) is starting... (C:/Users/UID/AppData/Local/Autodesk/.AdskAppManager/R1/AdAppMgr.exe)
+ INFO 2026-02-07T10:27:56.626 TID(11996) Command line: C:\Users\UID\AppData\Local\Autodesk\.AdskAppManager\R1\AdAppMgr.exe -showminimized -checkautorun
+ INFO 2026-02-07T10:27:56.641 TID(11996) Autodesk Application Manager ({F6CD2F5B-26E9-4EE3-A270-F3ABBC30B2D3}) started.
+ INFO 2026-02-07T10:27:56.657 TID(11996) AdAppMgrUtil::InitialSSLContext
+ INFO 2026-02-07T10:27:58.505 TID(11996) AdNetworkMgr::init called...
+ INFO 2026-02-07T10:27:58.505 TID(14188) AppMgr::started...
+ INFO 2026-02-07T10:27:58.568 TID(14188) AppCastMgr::create succeeded.
+ INFO 2026-02-07T10:27:58.568 TID(14188) ClientStateMgr::create succeeded.
+ INFO 2026-02-07T10:27:58.568 TID(14188) AppMgr::started: exit.
+ INFO 2026-02-07T10:28:01.342 TID(11996) CmdTargetMgrImp::isHigherVersion SDS  version:4.0.69.0
+ INFO 2026-02-07T10:28:01.342 TID(11996) CmdTargetMgrImp::isHigherVersion SELF version:4.0.69.0
+ INFO 2026-02-07T17:02:48.379 TID(11996) Autodesk Application Manager ({F6CD2F5B-26E9-4EE3-A270-F3ABBC30B2D3}) stopped.
+ INFO 2026-02-09T09:53:03.210 TID(5480) Autodesk Application Manager ({9F33BC11-C5DA-4E34-AD54-3FCDFC5244B3}) is starting... (C:/Program Files (x86)/Common Files/Autodesk Shared/AppManager/R1/AdAppMgr.exe)
+ INFO 2026-02-09T09:53:03.210 TID(5480) Command line: C:\Program Files (x86)\Common Files\Autodesk Shared\AppManager\R1\AdAppMgr.exe -showminimized -checkautorun
+ INFO 2026-02-09T09:53:10.367 TID(5480) Launch another instance from per user location successfully.
+ INFO 2026-02-09T09:53:10.375 TID(5480) Autodesk Application Manager ({9F33BC11-C5DA-4E34-AD54-3FCDFC5244B3}) quits now.
+ INFO 2026-02-09T09:53:11.162 TID(11948) Autodesk Application Manager ({C3F2256E-1BD0-4B95-9B9C-455E72727DB6}) is starting... (C:/Users/UID/AppData/Local/Autodesk/.AdskAppManager/R1/AdAppMgr.exe)
+ INFO 2026-02-09T09:53:11.162 TID(11948) Command line: C:\Users\UID\AppData\Local\Autodesk\.AdskAppManager\R1\AdAppMgr.exe -showminimized -checkautorun
+ INFO 2026-02-09T09:53:11.212 TID(11948) Autodesk Application Manager ({C3F2256E-1BD0-4B95-9B9C-455E72727DB6}) started.
+ INFO 2026-02-09T09:53:11.232 TID(11948) AdAppMgrUtil::InitialSSLContext
+ INFO 2026-02-09T09:53:13.686 TID(11948) AdNetworkMgr::init called...
+ INFO 2026-02-09T09:53:13.688 TID(18324) AppMgr::started...
+ INFO 2026-02-09T09:53:13.800 TID(18324) AppCastMgr::create succeeded.
+ INFO 2026-02-09T09:53:13.800 TID(18324) ClientStateMgr::create succeeded.
+ INFO 2026-02-09T09:53:13.800 TID(18324) AppMgr::started: exit.
+ INFO 2026-02-09T09:53:17.210 TID(11948) CmdTargetMgrImp::isHigherVersion SDS  version:4.0.69.0
+ INFO 2026-02-09T09:53:17.210 TID(11948) CmdTargetMgrImp::isHigherVersion SELF version:4.0.69.0
+ INFO 2026-02-09T18:30:17.483 TID(11948) Autodesk Application Manager ({C3F2256E-1BD0-4B95-9B9C-455E72727DB6}) stopped.
+ INFO 2026-02-10T10:06:25.320 TID(12272) Autodesk Application Manager ({8CFD23CD-BA61-4731-9C0A-83EF4E5C5339}) is starting... (C:/Program Files (x86)/Common Files/Autodesk Shared/AppManager/R1/AdAppMgr.exe)
+ INFO 2026-02-10T10:06:25.320 TID(12272) Command line: C:\Program Files (x86)\Common Files\Autodesk Shared\AppManager\R1\AdAppMgr.exe -showminimized -checkautorun
+ INFO 2026-02-10T10:06:31.243 TID(12272) Launch another instance from per user location successfully.
+ INFO 2026-02-10T10:06:31.244 TID(12272) Autodesk Application Manager ({8CFD23CD-BA61-4731-9C0A-83EF4E5C5339}) quits now.
+ INFO 2026-02-10T10:06:32.265 TID(12100) Autodesk Application Manager ({370EE66C-8EA5-4F0E-8B40-35C7FEA109BF}) is starting... (C:/Users/UID/AppData/Local/Autodesk/.AdskAppManager/R1/AdAppMgr.exe)
+ INFO 2026-02-10T10:06:32.266 TID(12100) Command line: C:\Users\UID\AppData\Local\Autodesk\.AdskAppManager\R1\AdAppMgr.exe -showminimized -checkautorun
+ INFO 2026-02-10T10:06:32.316 TID(12100) Autodesk Application Manager ({370EE66C-8EA5-4F0E-8B40-35C7FEA109BF}) started.
+ INFO 2026-02-10T10:06:32.351 TID(12100) AdAppMgrUtil::InitialSSLContext
+ERROR 2026-02-10T10:06:32.441 TID(12100) AdAppMgrUtil::InitialSSLContext InternetOpenUrl failed with error 12007
+ INFO 2026-02-10T10:06:33.085 TID(12100) AdNetworkMgr::init called...
+ INFO 2026-02-10T10:06:33.088 TID(5392) AppMgr::started...
+ INFO 2026-02-10T10:06:33.146 TID(5392) AppCastMgr::create succeeded.
+ INFO 2026-02-10T10:06:33.147 TID(5392) ClientStateMgr::create succeeded.
+ INFO 2026-02-10T10:06:33.148 TID(5392) AppMgr::started: exit.
+ INFO 2026-02-10T10:06:37.006 TID(12100) CmdTargetMgrImp::isHigherVersion SDS  version:4.0.69.0
+ INFO 2026-02-10T10:06:37.022 TID(12100) CmdTargetMgrImp::isHigherVersion SELF version:4.0.69.0
+ INFO 2026-02-10T18:32:38.078 TID(12100) Autodesk Application Manager ({370EE66C-8EA5-4F0E-8B40-35C7FEA109BF}) stopped.
+ INFO 2026-02-11T10:40:37.960 TID(4968) Autodesk Application Manager ({154DF986-F391-4371-BAED-C90B0428E6CD}) is starting... (C:/Program Files (x86)/Common Files/Autodesk Shared/AppManager/R1/AdAppMgr.exe)
+ INFO 2026-02-11T10:40:37.960 TID(4968) Command line: C:\Program Files (x86)\Common Files\Autodesk Shared\AppManager\R1\AdAppMgr.exe -showminimized -checkautorun
+ INFO 2026-02-11T10:40:44.477 TID(4968) Launch another instance from per user location successfully.
+ INFO 2026-02-11T10:40:44.478 TID(4968) Autodesk Application Manager ({154DF986-F391-4371-BAED-C90B0428E6CD}) quits now.
+ INFO 2026-02-11T10:40:45.436 TID(17200) Autodesk Application Manager ({55E1F497-D742-4415-8855-E6A93C055E53}) is starting... (C:/Users/UID/AppData/Local/Autodesk/.AdskAppManager/R1/AdAppMgr.exe)
+ INFO 2026-02-11T10:40:45.437 TID(17200) Command line: C:\Users\UID\AppData\Local\Autodesk\.AdskAppManager\R1\AdAppMgr.exe -showminimized -checkautorun
+ INFO 2026-02-11T10:40:45.499 TID(17200) Autodesk Application Manager ({55E1F497-D742-4415-8855-E6A93C055E53}) started.
+ INFO 2026-02-11T10:40:45.528 TID(17200) AdAppMgrUtil::InitialSSLContext
+ INFO 2026-02-11T10:40:47.966 TID(17200) AdNetworkMgr::init called...
+ INFO 2026-02-11T10:40:47.966 TID(5944) AppMgr::started...
+ INFO 2026-02-11T10:40:47.996 TID(5944) AppCastMgr::create succeeded.
+ INFO 2026-02-11T10:40:48.012 TID(5944) ClientStateMgr::create succeeded.
+ INFO 2026-02-11T10:40:48.014 TID(5944) AppMgr::started: exit.
+ INFO 2026-02-11T10:40:51.360 TID(17200) CmdTargetMgrImp::isHigherVersion SDS  version:4.0.69.0
+ INFO 2026-02-11T10:40:51.361 TID(17200) CmdTargetMgrImp::isHigherVersion SELF version:4.0.69.0
+ INFO 2026-02-11T18:31:53.963 TID(17200) Autodesk Application Manager ({55E1F497-D742-4415-8855-E6A93C055E53}) stopped.
+ INFO 2026-02-12T09:55:32.223 TID(27156) Autodesk Application Manager ({D11CA058-35A9-4B61-9641-D5900A3CF207}) is starting... (C:/Program Files (x86)/Common Files/Autodesk Shared/AppManager/R1/AdAppMgr.exe)
+ INFO 2026-02-12T09:55:32.223 TID(27156) Command line: C:\Program Files (x86)\Common Files\Autodesk Shared\AppManager\R1\AdAppMgr.exe -showminimized -checkautorun
+ INFO 2026-02-12T09:55:41.816 TID(27156) Launch another instance from per user location successfully.
+ INFO 2026-02-12T09:55:41.816 TID(27156) Autodesk Application Manager ({D11CA058-35A9-4B61-9641-D5900A3CF207}) quits now.
+ INFO 2026-02-12T09:55:42.722 TID(3532) Autodesk Application Manager ({A693A194-6086-49D3-B1F7-69714381D5AD}) is starting... (C:/Users/UID/AppData/Local/Autodesk/.AdskAppManager/R1/AdAppMgr.exe)
+ INFO 2026-02-12T09:55:42.722 TID(3532) Command line: C:\Users\UID\AppData\Local\Autodesk\.AdskAppManager\R1\AdAppMgr.exe -showminimized -checkautorun
+ INFO 2026-02-12T09:55:42.754 TID(3532) Autodesk Application Manager ({A693A194-6086-49D3-B1F7-69714381D5AD}) started.
+ INFO 2026-02-12T09:55:42.785 TID(3532) AdAppMgrUtil::InitialSSLContext
+ INFO 2026-02-12T09:55:44.640 TID(3532) AdNetworkMgr::init called...
+ INFO 2026-02-12T09:55:44.655 TID(21156) AppMgr::started...
+ INFO 2026-02-12T09:55:44.733 TID(21156) AppCastMgr::create succeeded.
+ INFO 2026-02-12T09:55:44.733 TID(21156) ClientStateMgr::create succeeded.
+ INFO 2026-02-12T09:55:44.733 TID(21156) AppMgr::started: exit.
+ INFO 2026-02-12T09:55:47.420 TID(3532) CmdTargetMgrImp::isHigherVersion SDS  version:4.0.69.0
+ INFO 2026-02-12T09:55:47.420 TID(3532) CmdTargetMgrImp::isHigherVersion SELF version:4.0.69.0
+ INFO 2026-02-12T18:26:30.460 TID(3532) Autodesk Application Manager ({A693A194-6086-49D3-B1F7-69714381D5AD}) stopped.
+ INFO 2026-02-13T10:04:18.940 TID(23720) Autodesk Application Manager ({7D2DA1FA-4C8A-4CC8-8C21-4B5A1087A3BD}) is starting... (C:/Program Files (x86)/Common Files/Autodesk Shared/AppManager/R1/AdAppMgr.exe)
+ INFO 2026-02-13T10:04:18.940 TID(23720) Command line: C:\Program Files (x86)\Common Files\Autodesk Shared\AppManager\R1\AdAppMgr.exe -showminimized -checkautorun
+ INFO 2026-02-13T10:04:24.678 TID(23720) Launch another instance from per user location successfully.
+ INFO 2026-02-13T10:04:24.679 TID(23720) Autodesk Application Manager ({7D2DA1FA-4C8A-4CC8-8C21-4B5A1087A3BD}) quits now.
+ INFO 2026-02-13T10:04:25.492 TID(10096) Autodesk Application Manager ({DC66308D-F01D-41D8-8C7C-DDB05A682A7E}) is starting... (C:/Users/UID/AppData/Local/Autodesk/.AdskAppManager/R1/AdAppMgr.exe)
+ INFO 2026-02-13T10:04:25.493 TID(10096) Command line: C:\Users\UID\AppData\Local\Autodesk\.AdskAppManager\R1\AdAppMgr.exe -showminimized -checkautorun
+ INFO 2026-02-13T10:04:25.511 TID(10096) Autodesk Application Manager ({DC66308D-F01D-41D8-8C7C-DDB05A682A7E}) started.
+ INFO 2026-02-13T10:04:25.530 TID(10096) AdAppMgrUtil::InitialSSLContext
+ INFO 2026-02-13T10:04:27.408 TID(10096) AdNetworkMgr::init called...
+ INFO 2026-02-13T10:04:27.408 TID(27096) AppMgr::started...
+ INFO 2026-02-13T10:04:27.443 TID(27096) AppCastMgr::create succeeded.
+ INFO 2026-02-13T10:04:27.444 TID(27096) ClientStateMgr::create succeeded.
+ INFO 2026-02-13T10:04:27.445 TID(27096) AppMgr::started: exit.
+ INFO 2026-02-13T10:04:30.546 TID(10096) CmdTargetMgrImp::isHigherVersion SDS  version:4.0.69.0
+ INFO 2026-02-13T10:04:30.546 TID(10096) CmdTargetMgrImp::isHigherVersion SELF version:4.0.69.0
+ INFO 2026-02-13T18:33:51.596 TID(10096) Autodesk Application Manager ({DC66308D-F01D-41D8-8C7C-DDB05A682A7E}) stopped.
+ INFO 2026-02-16T09:43:17.779 TID( 256) Autodesk Application Manager ({5D9E29E2-B8E2-4C24-9FAC-1309F21BA5AA}) is starting... (C:/Program Files (x86)/Common Files/Autodesk Shared/AppManager/R1/AdAppMgr.exe)
+ INFO 2026-02-16T09:43:17.781 TID( 256) Command line: C:\Program Files (x86)\Common Files\Autodesk Shared\AppManager\R1\AdAppMgr.exe -showminimized -checkautorun
+ INFO 2026-02-16T09:43:29.683 TID( 256) Launch another instance from per user location successfully.
+ INFO 2026-02-16T09:43:29.692 TID( 256) Autodesk Application Manager ({5D9E29E2-B8E2-4C24-9FAC-1309F21BA5AA}) quits now.
+ INFO 2026-02-16T09:43:30.410 TID(12028) Autodesk Application Manager ({1A6504B6-357D-484C-829E-8618B3F443EC}) is starting... (C:/Users/UID/AppData/Local/Autodesk/.AdskAppManager/R1/AdAppMgr.exe)
+ INFO 2026-02-16T09:43:30.411 TID(12028) Command line: C:\Users\UID\AppData\Local\Autodesk\.AdskAppManager\R1\AdAppMgr.exe -showminimized -checkautorun
+ INFO 2026-02-16T09:43:30.442 TID(12028) Autodesk Application Manager ({1A6504B6-357D-484C-829E-8618B3F443EC}) started.
+ INFO 2026-02-16T09:43:30.478 TID(12028) AdAppMgrUtil::InitialSSLContext
+ INFO 2026-02-16T09:43:32.858 TID(12028) AdNetworkMgr::init called...
+ INFO 2026-02-16T09:43:32.858 TID(5108) AppMgr::started...
+ INFO 2026-02-16T09:43:32.941 TID(5108) AppCastMgr::create succeeded.
+ INFO 2026-02-16T09:43:32.941 TID(5108) ClientStateMgr::create succeeded.
+ INFO 2026-02-16T09:43:32.941 TID(5108) AppMgr::started: exit.
+ INFO 2026-02-16T09:43:36.986 TID(12028) CmdTargetMgrImp::isHigherVersion SDS  version:4.0.69.0
+ INFO 2026-02-16T09:43:36.986 TID(12028) CmdTargetMgrImp::isHigherVersion SELF version:4.0.69.0
+ INFO 2026-02-16T18:30:53.409 TID(12028) Autodesk Application Manager ({1A6504B6-357D-484C-829E-8618B3F443EC}) stopped.
+ INFO 2026-02-17T09:56:45.852 TID(1624) Autodesk Application Manager ({A9B39A88-8C69-43E2-A992-5E071F173B2A}) is starting... (C:/Program Files (x86)/Common Files/Autodesk Shared/AppManager/R1/AdAppMgr.exe)
+ INFO 2026-02-17T09:56:45.852 TID(1624) Command line: C:\Program Files (x86)\Common Files\Autodesk Shared\AppManager\R1\AdAppMgr.exe -showminimized -checkautorun
+ INFO 2026-02-17T09:56:51.648 TID(1624) Launch another instance from per user location successfully.
+ INFO 2026-02-17T09:56:51.648 TID(1624) Autodesk Application Manager ({A9B39A88-8C69-43E2-A992-5E071F173B2A}) quits now.
+ INFO 2026-02-17T09:56:52.554 TID(12056) Autodesk Application Manager ({30881DE4-9639-4E1B-A772-8738EF19BA1A}) is starting... (C:/Users/UID/AppData/Local/Autodesk/.AdskAppManager/R1/AdAppMgr.exe)
+ INFO 2026-02-17T09:56:52.554 TID(12056) Command line: C:\Users\UID\AppData\Local\Autodesk\.AdskAppManager\R1\AdAppMgr.exe -showminimized -checkautorun
+ INFO 2026-02-17T09:56:52.601 TID(12056) Autodesk Application Manager ({30881DE4-9639-4E1B-A772-8738EF19BA1A}) started.
+ INFO 2026-02-17T09:56:52.616 TID(12056) AdAppMgrUtil::InitialSSLContext
+ INFO 2026-02-17T09:56:54.988 TID(12056) AdNetworkMgr::init called...
+ INFO 2026-02-17T09:56:54.988 TID(4792) AppMgr::started...
+ INFO 2026-02-17T09:56:55.092 TID(4792) AppCastMgr::create succeeded.
+ INFO 2026-02-17T09:56:55.092 TID(4792) ClientStateMgr::create succeeded.
+ INFO 2026-02-17T09:56:55.107 TID(4792) AppMgr::started: exit.
+ INFO 2026-02-17T09:56:59.331 TID(12056) CmdTargetMgrImp::isHigherVersion SDS  version:4.0.69.0
+ INFO 2026-02-17T09:56:59.332 TID(12056) CmdTargetMgrImp::isHigherVersion SELF version:4.0.69.0
+ INFO 2026-02-17T18:30:19.225 TID(12056) Autodesk Application Manager ({30881DE4-9639-4E1B-A772-8738EF19BA1A}) stopped.
+ INFO 2026-02-18T09:58:57.218 TID(9928) Autodesk Application Manager ({C39F81A7-179D-47AF-8A24-6DAEADEB3460}) is starting... (C:/Program Files (x86)/Common Files/Autodesk Shared/AppManager/R1/AdAppMgr.exe)
+ INFO 2026-02-18T09:58:57.218 TID(9928) Command line: C:\Program Files (x86)\Common Files\Autodesk Shared\AppManager\R1\AdAppMgr.exe -showminimized -checkautorun
+ INFO 2026-02-18T09:59:03.919 TID(9928) Launch another instance from per user location successfully.
+ INFO 2026-02-18T09:59:03.919 TID(9928) Autodesk Application Manager ({C39F81A7-179D-47AF-8A24-6DAEADEB3460}) quits now.
+ INFO 2026-02-18T09:59:04.701 TID(29488) Autodesk Application Manager ({6BBF1CD6-0A95-418A-A5F8-D430D559127D}) is starting... (C:/Users/UID/AppData/Local/Autodesk/.AdskAppManager/R1/AdAppMgr.exe)
+ INFO 2026-02-18T09:59:04.701 TID(29488) Command line: C:\Users\UID\AppData\Local\Autodesk\.AdskAppManager\R1\AdAppMgr.exe -showminimized -checkautorun
+ INFO 2026-02-18T09:59:04.732 TID(29488) Autodesk Application Manager ({6BBF1CD6-0A95-418A-A5F8-D430D559127D}) started.
+ INFO 2026-02-18T09:59:04.747 TID(29488) AdAppMgrUtil::InitialSSLContext
+ INFO 2026-02-18T09:59:06.629 TID(29488) AdNetworkMgr::init called...
+ INFO 2026-02-18T09:59:06.629 TID(19112) AppMgr::started...
+ INFO 2026-02-18T09:59:06.676 TID(19112) AppCastMgr::create succeeded.
+ INFO 2026-02-18T09:59:06.676 TID(19112) ClientStateMgr::create succeeded.
+ INFO 2026-02-18T09:59:06.676 TID(19112) AppMgr::started: exit.
+ INFO 2026-02-18T09:59:09.222 TID(29488) CmdTargetMgrImp::isHigherVersion SDS  version:4.0.69.0
+ INFO 2026-02-18T09:59:09.222 TID(29488) CmdTargetMgrImp::isHigherVersion SELF version:4.0.69.0
+ INFO 2026-02-18T18:28:16.693 TID(29488) Autodesk Application Manager ({6BBF1CD6-0A95-418A-A5F8-D430D559127D}) stopped.
+ INFO 2026-02-18T23:06:28.184 TID(23064) Autodesk Application Manager ({A3F6A219-186E-4C0F-8DCD-9FB85D2FA51C}) is starting... (C:/Program Files (x86)/Common Files/Autodesk Shared/AppManager/R1/AdAppMgr.exe)
+ INFO 2026-02-18T23:06:28.184 TID(23064) Command line: C:\Program Files (x86)\Common Files\Autodesk Shared\AppManager\R1\AdAppMgr.exe -showminimized -checkautorun
+ INFO 2026-02-18T23:06:34.635 TID(23064) Launch another instance from per user location successfully.
+ INFO 2026-02-18T23:06:34.635 TID(23064) Autodesk Application Manager ({A3F6A219-186E-4C0F-8DCD-9FB85D2FA51C}) quits now.
+ INFO 2026-02-18T23:06:35.323 TID(16680) Autodesk Application Manager ({1627DC26-C76B-44FB-AB5F-581084309784}) is starting... (C:/Users/UID/AppData/Local/Autodesk/.AdskAppManager/R1/AdAppMgr.exe)
+ INFO 2026-02-18T23:06:35.323 TID(16680) Command line: C:\Users\UID\AppData\Local\Autodesk\.AdskAppManager\R1\AdAppMgr.exe -showminimized -checkautorun
+ INFO 2026-02-18T23:06:35.338 TID(16680) Autodesk Application Manager ({1627DC26-C76B-44FB-AB5F-581084309784}) started.
+ INFO 2026-02-18T23:06:35.354 TID(16680) AdAppMgrUtil::InitialSSLContext
+ INFO 2026-02-18T23:06:37.288 TID(16680) AdNetworkMgr::init called...
+ INFO 2026-02-18T23:06:37.288 TID(29016) AppMgr::started...
+ INFO 2026-02-18T23:06:37.351 TID(29016) AppCastMgr::create succeeded.
+ INFO 2026-02-18T23:06:37.351 TID(29016) ClientStateMgr::create succeeded.
+ INFO 2026-02-18T23:06:37.351 TID(29016) AppMgr::started: exit.
+ INFO 2026-02-18T23:06:40.194 TID(16680) CmdTargetMgrImp::isHigherVersion SDS  version:4.0.69.0
+ INFO 2026-02-18T23:06:40.194 TID(16680) CmdTargetMgrImp::isHigherVersion SELF version:4.0.69.0
+ INFO 2026-02-19T18:25:15.456 TID(16680) Autodesk Application Manager ({1627DC26-C76B-44FB-AB5F-581084309784}) stopped.
+ INFO 2026-02-20T09:53:15.264 TID(20736) Autodesk Application Manager ({8EB145B0-5F13-4996-86CE-AB13F75CE987}) is starting... (C:/Program Files (x86)/Common Files/Autodesk Shared/AppManager/R1/AdAppMgr.exe)
+ INFO 2026-02-20T09:53:15.265 TID(20736) Command line: C:\Program Files (x86)\Common Files\Autodesk Shared\AppManager\R1\AdAppMgr.exe -showminimized -checkautorun
+ INFO 2026-02-20T09:53:21.326 TID(20736) Launch another instance from per user location successfully.
+ INFO 2026-02-20T09:53:21.327 TID(20736) Autodesk Application Manager ({8EB145B0-5F13-4996-86CE-AB13F75CE987}) quits now.
+ INFO 2026-02-20T09:53:21.961 TID(27064) Autodesk Application Manager ({7E6A749C-69A4-4644-A08F-49E29DB47A00}) is starting... (C:/Users/UID/AppData/Local/Autodesk/.AdskAppManager/R1/AdAppMgr.exe)
+ INFO 2026-02-20T09:53:21.963 TID(27064) Command line: C:\Users\UID\AppData\Local\Autodesk\.AdskAppManager\R1\AdAppMgr.exe -showminimized -checkautorun
+ INFO 2026-02-20T09:53:21.986 TID(27064) Autodesk Application Manager ({7E6A749C-69A4-4644-A08F-49E29DB47A00}) started.
+ INFO 2026-02-20T09:53:22.005 TID(27064) AdAppMgrUtil::InitialSSLContext
+ INFO 2026-02-20T09:53:23.726 TID(27064) AdNetworkMgr::init called...
+ INFO 2026-02-20T09:53:23.728 TID(10232) AppMgr::started...
+ INFO 2026-02-20T09:53:23.760 TID(10232) AppCastMgr::create succeeded.
+ INFO 2026-02-20T09:53:23.761 TID(10232) ClientStateMgr::create succeeded.
+ INFO 2026-02-20T09:53:23.762 TID(10232) AppMgr::started: exit.
+ INFO 2026-02-20T09:53:26.385 TID(27064) CmdTargetMgrImp::isHigherVersion SDS  version:4.0.69.0
+ INFO 2026-02-20T09:53:26.386 TID(27064) CmdTargetMgrImp::isHigherVersion SELF version:4.0.69.0

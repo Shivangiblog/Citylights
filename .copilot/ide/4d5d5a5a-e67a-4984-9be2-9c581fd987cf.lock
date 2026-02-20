@@ -1,0 +1,14 @@
+{
+  "socketPath": "\\\\.\\pipe\\mcp-1df1269a-9d43-4ef9-8f9d-bf2507db2563.sock",
+  "scheme": "pipe",
+  "headers": {
+    "Authorization": "Nonce 5e152f67-11b0-4d8e-88ae-ae7e2f1d64ae"
+  },
+  "pid": 13624,
+  "ideName": "Visual Studio Code",
+  "timestamp": 1771574649524,
+  "workspaceFolders": [
+    "c:\\Users\\UID\\Downloads\\seller-product-hub-main-new\\seller-product-hub-main"
+  ],
+  "isTrusted": true
+}

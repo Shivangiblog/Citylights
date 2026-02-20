@@ -96,3 +96,19 @@ git add README.md
 git branch -M main
 git remote add origin https://github.com/Shivangiblog/insightful.git
 git push -u origin main
+[200~git init~
+git init
+git add README.md
+git commit -m "brand"
+git branch -M main
+git remote add origin https://github.com/Shivangiblog/brandsnew.git
+git push -u origin main
+git pull
+[200~git branch --set-upstream-to=origin/main main~
+git pull origin main
+git push origin main
+git pull origin main --rebase
+git push -f origin main
+git remote add origin https://github.com/Shivangiblog/brandsnew.git
+git branch -M main
+git push -u origin main
